@@ -1,0 +1,29 @@
+@keyframes PageLoader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes PageLoader {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.loader {
+    content: '';
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: #848484;
+    animation: PageLoader .6s linear infinite;
+    -webkit-animation: PageLoader .6s linear infinite;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
